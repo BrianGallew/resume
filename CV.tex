@@ -142,48 +142,51 @@ Database Engineer IV
 
 \begin{detail}
 
-\BulletItem
-Designed and deployed 5 Hadoop clusters using cfengine/Salt and
+Served as a member of several different teams throughout the organization,
+most currently assigned to the 6-person data services team.  The primary
+focus of the team is MySQL, with MongoDB, Cassandra, Hadoop, ElasticSearch
+and Bacula each having a single primary owner with only one support person
+to provide additional coverage.  These systems drive the billing,
+reporting, and storage services for the entire CDN.  During a recent
+datacenter disaster, the services provided by our team were the only
+centralized ones able to continue functioning with no more than five
+minutes of service interruption.
+
+\BulletItem Designed and deployed 5 Hadoop clusters using cfengine/Salt and
 monitoring by Zabbix and OpenTSDB with HDFS metadata backups done by
-Bacula.  One is the basis of Limelight's billing system and thus in-scope
-for Sarbanes-Oxley.
+Bacula.
 
-\BulletItem
-Developed, tested, and executed cfengine deployment of an internal,
-geographically aware DNS platform across 6 continents and 150 systems.
-Deployments which were previously a multi-hour process were reduced to no
-more than 15 minutes of hands-on time.
+\BulletItem Developed, tested, and executed cfengine deployment of an
+internal, geographically aware DNS platform across 6 continents and 150
+systems.  Deployments which were previously a multi-hour process were
+reduced to no more than 15 minutes of hands-on time.
 
-\BulletItem
-Designed and deployed 4 Cassandra clusters, the largest being 48 nodes and
-37TB of data spread across 3 continents.  They are fully monitored by
-Zabbix, backed up with Bacula, and managed by cfengine.  I also wrote
+\BulletItem Assisted with the design and personally deployed 4 Cassandra
+clusters, the largest being 48 nodes and 37TB of data spread across 3
+continents.  They are fully monitored by Zabbix, backed up with Bacula, and
+managed by cfengine.  I also wrote
 \href{https://github.com/BrianGallew/cassandra\_tools}{tools} for repair
 management and real-time monitoring.  The largest cluster is used as the
 directory service which enables Limelight to egress over 8Tbps of customer
 data.
 
-\BulletItem
-Assisted in the build and day-to-day management of 50 MySQL clusters,
-mostly comprised of four-node HA/DR pairs.  Wrote all the Salt states for
+\BulletItem Assisted in the build and day-to-day management of 50
+production MySQL clusters, mostly comprised of four-node HA/DR pairs, as
+well as 90 development/staging/qa systems.  Wrote all the Salt states for
 the automated build of new clusters, as well as all new Zabbix monitoring.
-Managed backups and restores with Bacula.
 
-\BulletItem
-Deployed a brand new 700TB Bacula-based backup system with Salt.  All
-client configurations are fully automated.  This system backs up both
-traditional Unix systems as well as MySQL, MongoDB, and Cassandra.
+\BulletItem Deployed a brand new 700TB Bacula-based backup system with
+Salt.  All client configurations are fully automated.  This system backs up
+both traditional Unix systems as well as MySQL, MongoDB, and Cassandra.
 
+\BulletItem MySQL upgrade from multiple versions to 5.5.  Performed a live
+upgrade of 5 trans-continental MySQL clusters with a combination of
+circular replication and read-only replication slaves with no service
+interruption.
 
-\BulletItem
-MySQL upgrade from multiple versions to 5.5.  Performed a live upgrade of 5
-trans-continental MySQL clusters with a combination of circular replication
-and read-only replication slaves with no service interruption.
-
-\BulletItem
-Wrote, packaged, and deployed tools to perform data collection, system
-management, asset management, new datacenter turn-up, backup management,
-and management of Zabbix.
+\BulletItem Wrote, packaged, and deployed tools to perform data collection,
+system management, asset management, new datacenter turn-up, backup
+management, and management of Zabbix.
 
 \end{detail}
 \EntryGap
@@ -198,33 +201,35 @@ Senior Systems Administrator
 
 \begin{detail}
 
-\BulletItem
-Implemented two Puppet installations, one a green field, the other to
-existing infrastructure, over 800 systems.  I also wrote custom facts for
-Puppet and provided patches to both Puppet and Foreman as I customized them
-for our environment or fixed outstanding bugs.
+Served as a member of the 5-6 person team responsible for all of the Unix
+systems, network storage, monitoring, and MySQL for an international online
+auction.  Also served as part of the 2 person team on a greenfield
+development project, which was going to provide social auction services.
+  
+\BulletItem Implemented two Puppet installations, one a green field, the
+other to existing infrastructure, over 800 systems.  I also wrote custom
+facts for Puppet and provided patches to both Puppet and Foreman as I
+customized them for our environment or fixed outstanding bugs.
 
-\BulletItem
-Supported an online, real-time auction service with customers in more than
-55 countries.  Worked to standardize systems, leading to faster roll-out
-times.
+\BulletItem Supported an online, real-time auction service with customers
+in more than 55 countries.  Worked with the rest of the team to standardize
+systems, leading to faster roll-out times.
 
-\BulletItem
-Wrote custom provisioning software to integrate with the existing asset
-management platform, which I also extended.
+\BulletItem Wrote custom provisioning software to integrate with the
+existing asset management platform, which I also extended.
 
-\BulletItem
-Replaced the existing single-node Nagios installation with a three-node
-\href{http://omdistro.org/}{OMD} installtion which provided resilience,
-locality, and much more comprehensive monitoring.  I also integrated this
-with Puppet to ensure that every deployed system was monitored during its
-entire lifecycle.
+\BulletItem Replaced the existing single-node Nagios installation with a
+three-node \href{http://omdistro.org/}{OMD} installtion which provided
+resilience, locality, and much more comprehensive monitoring.  I also
+integrated this with Puppet to ensure that every deployed system was
+monitored during its entire lifecycle.  This resulted in the immediate
+discovery of more than a dozen bad disks and power supplies in previously
+incompletely-monitored systems.
 
-\BulletItem
-Implemented a push-button deployment system with Jenkins.  This turned a
-very human-driven, hour-long deployment procedure for 2-3 staff into a
-single form in Jenkins which typically completed all of the tasks in 10
-minutes.
+\BulletItem Implemented a push-button deployment system with Jenkins.  This
+turned a very human-driven, hour-long deployment procedure for 2-3 staff
+into a single form in Jenkins which typically completed all of the tasks in
+10 minutes.
 
 \end{detail}
 \EntryGap
@@ -240,7 +245,15 @@ Research Systems Manager
 
 \begin{detail}
   
-
+Sole systems administrator for the new research systems datacenter.  While
+I only had direct responsibility for a very small amount of hardware, my
+primary focus was to provide direct support to researchers and professors.
+This varied from consulting on the syllabus for a class, to helping select
+equipment to support research, to deploying and configuring shared
+computing environments.  My secondary responsibility was training and
+menotoring the newly-hired systems manager who was assuming the
+reponsibilities of the position I had just vacated.
+  
 \BulletItem
 Implemented an IBM Blue Cloud (beta) system for Hadoop research.  This
 included altering the underlying deployment software to work around bugs
@@ -249,13 +262,6 @@ and design flaws in the delivered system.
 \BulletItem
 Supported the development of a curriculum to teach Carnegie Mellon students
 how to use distributed systems to solve large data problems using Hadoop.
-
-\BulletItem
-Implemented centralized systems configuration management via Puppet.
-
-\BulletItem
-Worked with faculty in evaluating their infrastructure needs and the best
-methodologies to provide them with a reliable research platform.
 
 \end{detail}
 \EntryGap
@@ -270,46 +276,41 @@ Systems Manager
 \DatestampYM{2006}{04} -- \DatestampYM{2009}{04}
 
 \begin{detail}
-\BulletItem
+
 Sole sysadmin having responsibility for all production systems, including
 web services, email, distributed storage, networked file systems, backup,
 maintenance, accounts, provisioning, and physical infrastructure serving a
 campus of 400 students with another 100 staff and faculty.
 
-\BulletItem
-Implemented VMware VirtualCenter and converted 95\% of our infrastructure
-to virtual machines on SAN storage, reducing our footprint from 350+
-physical servers to fewer than 80, while increasing not only the resilience
-of the services we offered but adding capacity.
+\BulletItem Designed and built out centralized systems configuration
+management via Puppet.
 
-\BulletItem
-Migrated all services between from one DC to another with no interruption
-in user services.
+\BulletItem Implemented VMware VirtualCenter and converted 95\% of our
+infrastructure to virtual machines on SAN storage, reducing our footprint
+from 350+ physical servers to fewer than 80, while increasing not only the
+resilience of the services we offered but adding capacity.
 
-\BulletItem
-Added redundancy and near-real-time recovery mechanisms where appropriate.
+\BulletItem Migrated all services between from one DC to another with no
+interruption in user services.
 
-\BulletItem
-Replaced an Amanda-based backup system with Time Navigator, extending it to
-cover Oracle services and MySQL services, and using DataDomain storage for
-deduplication, compression, and off-site replication.
+\BulletItem Replaced an Amanda-based backup system with Time Navigator,
+extending it to cover Oracle services and MySQL services, and using
+DataDomain storage for deduplication, compression, and off-site
+replication.
 
-\BulletItem
-Replaced more than 20 individually configured and managed MySQL servers
-with a MySQL service with replication and fail-over capabilities.
+\BulletItem Replaced more than 20 individually configured and managed MySQL
+servers with a MySQL service with replication and fail-over capabilities.
 
-\BulletItem
-Implemented systems monitoring through log file consolidation and
-mining. Extended the automated monitoring system to handle new services.
+\BulletItem Added log file consolidation and mining to the existing
+monitoring platform. Extended the automated monitoring system to handle new
+services.
 
-\BulletItem
-Worked with the design team on the layout, equipment, and management of a
-new data center.
+\BulletItem Worked with the design team on the layout, equipment, and
+management of a new data center.
 
-\BulletItem
-Built and deployed network security tools (Argus and Snort). Created
-hardened system configurations and deployed them via a custom provisioning
-system.
+\BulletItem Built and deployed network security tools (Argus and
+Snort).  Created hardened system configurations and deployed them via a
+custom provisioning system.
 
 \end{detail}
 \EntryGap
@@ -324,42 +325,41 @@ Senior System Administrator
 
 \begin{detail}
 
-\BulletItem
-Managed a team of three sysadmins whose responsibilities included all
-administrative systems (Student Information System, Human Resources
-Information System, Property Accounting System, Oracle Financials).
+Starting as desktop support and quickly transitioning into a junior systems
+administrator, I soon became the senior systems administrator and team
+leader for the administrative branch of the university, which owned and
+operated all the administrative systems (Student Information System, Human
+Resources Information System, Property Accounting System, Oracle
+Financials).  By the time I left, I was managing a team of four sysadmins,
+including myself.
 
-\BulletItem
-Responsible for the selection, purchase, and implementation of all the
+\BulletItem Responsible for the selection, and implementation of all the
 hardware and software supporting the administrative systems.
 
-\BulletItem
-Developed Apache modules in support of online registration.
+\BulletItem Wrote the Apache modules which enabled the first known
+real-time college class scheduling/registration system.
 
-\BulletItem
-Deployed a live, tested disaster recovery site in all details (power,
-cooling, networking, equipment, 40TB data replication) using Sun, HP, and Dell
-servers and Xiotech storage.  Not only did this provide resilience for all
-our administrative systems (including Oracle Financials), the design
-enabled us to do development on up-to-date datasets whicn in turn provided
-continuous assurance that replication was functioning correctly.
+\BulletItem Deployed a live, tested disaster recovery site in all details
+(power (UPS and backup generator), cooling, networking, equipment, 40TB
+data replication) using Sun, HP, and Dell servers and Xiotech storage.  Not
+only did this provide resilience for all our administrative systems
+(including Oracle Financials), the design enabled us to do development on
+up-to-date datasets which in turn provided continuous assurance that
+replication was functioning correctly.
 
-\BulletItem
-Primary engineer for the migration of production applications between 8
-different operating systems running on 7 different vendor platforms (Sun,
-HP, DG, DEC, Sequent, IBM, Dell).
+\BulletItem Primary engineer for the migration of production applications
+between 8 different operating systems running on 7 different vendor
+platforms (Sun, HP, DG, DEC, Sequent, IBM, Dell).
 
-\BulletItem
-Systems architect for the \$18M Oracle Financials implementation.
+\BulletItem Systems architect for the \$18M Oracle Financials
+implementation.
 
-\BulletItem
-Converted the previous open access network model to a more restricted one
-where only explicitly exported services were available to customers, while
-enabling developers to continue to work productively.
+\BulletItem Converted the previous open access network model to a more
+restricted one where only explicitly exported services were available to
+customers, while enabling developers to continue to work productively.
 
-\BulletItem
-Managed local response to security incidents while coordinating with the
-central information security team.
+\BulletItem Managed local response to security incidents while coordinating
+with the central information security team.
 
 \end{detail}
 \EntryGap
